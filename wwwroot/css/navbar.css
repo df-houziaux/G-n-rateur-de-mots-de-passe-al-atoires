@@ -1,0 +1,70 @@
+﻿/* ==========================
+   STYLES GÉNÉRAUX 
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   NAVBAR FIXE 
+========================== */
+.custom-navbar {
+    background-color: #343a40 !important; /* Couleur de fond */
+    padding: 10px 40px; /* Réduction du padding pour réduire la hauteur */
+    position: fixed; /* Fixer la navbar en haut */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* S'assurer qu'elle passe au-dessus du contenu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus légère */
+}
+
+/* Ajout d'un padding pour éviter que la navbar cache le contenu */
+body {
+    padding-top: 70px; /* Ajusté selon la nouvelle hauteur de la navbar */
+}
+
+/* ==========================
+   MENU DE NAVIGATION 
+========================== */
+.navbar-nav {
+    display: flex;
+    gap: 40px; /* Ajusté pour plus d'espace entre les liens */
+    font-size: 18px; /* Ajusté pour être proportionnel */
+}
+
+    /* Style des liens */
+    .navbar-nav .nav-link {
+        color: white !important;
+        padding: 5px 10px; /* Réduction du padding pour s'adapter à la nouvelle hauteur */
+        border-radius: 10px;
+        transition: background-color 0.3s ease-in-out;
+        text-decoration: none;
+    }
+
+    /* Effet au survol */
+    .navbar-nav .nav-item:hover {
+        background-color: #495057;
+        border-radius: 10px;
+    }
+
+/* ==========================
+   RESPONSIVE DESIGN 
+========================== */
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-right: 20px; /* Ajusté pour mobile */
+    }
+
+    /* Ajustement du logo sur mobile */
+    .logo {
+        width: 120px; /* Ajusté pour rester proportionnel */
+    }
+
+    /* Empiler la navigation sous le logo */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

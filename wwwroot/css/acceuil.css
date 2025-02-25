@@ -1,0 +1,197 @@
+﻿/* Style général */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Taille du logo */
+.logo {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: 54.83em;
+    top: 200px;
+    position: fixed;
+}
+
+/* ============================= */
+/* SECTION : Présentation */
+/* ============================= */
+
+.presentation {
+    background-color: #f0f4f8;
+    border-radius: 2.64px;
+    padding: 6.6px;
+    margin: 6.6px 0;
+    box-shadow: 0 1.32px 2.64px rgba(0, 0, 0, 0.1);
+    margin-top: 62.7px;
+    text-align: center;
+}
+
+    .presentation h3 {
+        font-size: 1.86rem;
+        color: #4A90E2;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .presentation h4 {
+        font-size: 1.8rem;
+        color: #333;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+.features-list,
+.advantages-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .features-list li,
+    .advantages-list li {
+        margin: 0;
+        padding: 5px 0;
+        list-style-type: none;
+    }
+
+
+.intro-text,
+.conclusion {
+    color: #8533e2;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-weight: bold
+}
+
+.conclusion {
+    font-size: 0.9rem;
+    padding: 4.95px;
+    border-radius: 1.65px;
+    margin: 6.6px 0;
+    background-color: #e7f3ff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.security-note {
+    font-size: 1rem;
+    margin-top: 4.95px;
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+}
+
+.separator {
+    border: 10.89px solid #e0e0e0;
+}
+
+/* ============================= */
+/* SECTION : Génération de mot de passe */
+/* ============================= */
+
+.container.generator {
+    max-width: 100%;
+    background: linear-gradient(to right, #4A90E2, #1A5276);
+    border: 2px solid #ccc;
+    border-radius: 4.95px;
+    box-shadow: 0 2.64px 3.3px rgba(0, 0, 0, 0.2);
+    padding: 6.6px;
+    text-align: center;
+}
+
+    .container.generator h3 {
+        font-size: 2.99rem;
+        text-align: center;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .container.generator input[type="number"] {
+        width: 53px;
+        padding: 3.3px;
+        font-size: 0.73em;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .container.generator button {
+        padding: 8.28px 20.56px;
+        font-size: 1rem;
+        margin: 4.95px 6.3px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        margin: 15px 10px;
+        width: 150px !important;
+    }
+
+        .container.generator button:hover {
+            background-color: #45a049;
+        }
+
+    .container.generator p {
+        font-size: 0.825rem;
+        margin-top: 6.6px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .container.generator .password-box {
+        font-size: 0.99rem;
+        font-weight: bold;
+        color: #333;
+        padding: 3.3px 6.6px;
+        background-color: #e9ecef;
+        border: 2px solid #ccc;
+        border-radius: 2.64px;
+        display: inline-block;
+        margin-top: 4.95px;
+    }
+
+.password-options {
+    background: linear-gradient(to right, #4A90E2, #8A2BE2);
+    padding: 13.2px;
+    border-radius: 8.25px;
+    box-shadow: 0 3.96px 8.25px rgba(0, 0, 0, 0.3);
+    max-width: 363.3px;
+    margin: 16.5px auto 3.3px;
+}
+
+    .password-options label {
+        font-size: 0.924rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .password-options input[type="number"] {
+        width: 990px;
+        font-size: 3rem;
+        padding: 1000px;
+        margin-left: 20px;
+        text-align: center;
+        border: 4px solid #aaa;
+        border-radius: 12px;
+        background-color: #f0f4f8;
+    }
+
+
+.checkbox-group {
+    margin-top: 8.25px;
+    display: flex;
+    align-items: center;
+}
+
+    .checkbox-group input {
+        width: 16.5px;
+        height: 16.5px;
+        margin-right: 6.6px;
+    }
+
+    .checkbox-group label {
+        font-size: 0.924rem;
+        color: black;
+    }

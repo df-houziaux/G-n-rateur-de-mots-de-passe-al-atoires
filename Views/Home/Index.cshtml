@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Générateur de mot de passe";
+}
+
+
+<link rel="stylesheet" href="~/css/acceuil.css" />
+
+
+
+<!-- Conteneur de présentation -->
+<div class="container presentation">
+    <h3>🔐 Bienvenue sur le Générateur de Mots de Passe sécurisés !</h3>
+    <!-- Logo centré -->
+    <a class="navbar-brand mx-auto fixed-logo" asp-area="" asp-controller="Home" asp-action="Index">
+        <img class="logo" src="~/images/Logogenerateurdemotsdepasse.png" alt="Générateur de Mots de Passe">
+    </a>
+    <p class="intro-text">
+        Ce site vous permet de créer des mots de passe robustes en fonction de vos préférences
+        pour garantir une sécurité optimale.
+    </p>
+
+    <hr class="separator">
+
+    <h4>✨ Fonctionnalités principales :</h4>
+    <ul class="features-list">
+        <li><strong>Définir la longueur du mot de passe :</strong> choisissez entre <strong>4 et 20 caractères</strong>.</li>
+        <li><strong>Personnaliser le contenu du mot de passe :</strong></li>
+        <ul class="sub-list">
+            <li><strong>Majuscules (A-Z)</strong> – Ajoutez des lettres capitales.</li>
+            <li><strong>Minuscules (a-z)</strong> – Incluez des lettres minuscules.</li>
+            <li><strong>Chiffres (0-9)</strong> – Ajoutez des chiffres.</li>
+            <li><strong>Caractères spéciaux </strong> – Renforcez votre mot de passe.</li>
+        </ul>
+        <li><strong>Génération instantanée :</strong> cliquez sur <strong>"Générer"</strong> pour obtenir un mot de passe sécurisé.</li>
+        <li><strong>Copie rapide :</strong> cliquez sur <strong>"Copier"</strong> pour l’enregistrer et l’utiliser facilement.</li>
+    </ul>
+
+    <hr class="separator">
+
+    <h4>🎯 Pourquoi utiliser ce générateur ?</h4>
+    <ul class="advantages-list">
+        <li><strong>Sécurité renforcée :</strong> les mots de passe générés sont difficiles à deviner.</li>
+        <li><strong>Rapide et efficace :</strong> obtenez un mot de passe en quelques secondes.</li>
+        <li><strong>Facile à utiliser :</strong> interface intuitive et accessible à tous.</li>
+    </ul>
+
+    <p class="conclusion">
+        🚀 <strong>Protégez vos comptes dès maintenant en générant un mot de passe sécurisé !</strong>
+    </p>
+
+    <p class="security-note">
+        🔒 Ce site génère des mots de passe aléatoires directement dans votre navigateur.
+        <br> Aucune donnée personnelle n'est collectée ni stockée.
+    </p>
+</div>
+
+
+
+<!-- Conteneur du formulaire de génération -->
+<div class="container generator">
+    <h3>🛠️ Générer votre mot de passe</h3>
+
+    <div class="password-options">
+        <label for="longueur"><strong>🔢 Longueur :</strong></label>
+        <input type="number" id="longueur" min="4" max="20" value="16" />
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="majuscule" checked />
+            <label for="majuscule">🔠 Majuscules (A-Z)</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="minuscule" checked />
+            <label for="minuscule">🔡 Minuscules (a-z)</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="chiffres" checked />
+            <label for="chiffres">🔢 Chiffres (0-9)</label>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="speciaux" />
+            <label for="speciaux">✨ Caractères spéciaux</label>
+        </div>
+    </div>
+
+
+    <br /><br />
+
+    <button id="genererBtn">Générer</button>
+    <button id="copierBtn">Copier</button>
+
+    <p>Voici votre mot de passe sécurisé : <span id="resultat" class="password-box"></span></p>
+</div>
+
+
+
+@section Scripts {
+    <script src="~/js/script.js"></script>
+}

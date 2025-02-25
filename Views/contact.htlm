@@ -1,0 +1,6 @@
+﻿namespace GénérateurDeMotsDePasse.Views
+{
+    public class contact
+    {
+    }
+}

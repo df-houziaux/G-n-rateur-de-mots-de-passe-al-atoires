@@ -1,0 +1,105 @@
+﻿/* ========================== 
+   STRUCTURE GLOBALE 
+========================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+}
+
+/* Le contenu principal prend l'espace restant */
+.content {
+    flex: 1;
+}
+
+/* ========================== 
+   FOOTER 
+========================== */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 15px 0;
+    margin-top: auto;
+    width: 99.9%;
+}
+
+    .footer .container {
+        display: flex; /* Flexbox pour le conteneur */
+        justify-content: space-between; /* Espacement uniforme entre les colonnes */
+        align-items: center; /* Alignement vertical centré */
+    }
+
+.footer-row {
+    display: flex; /* Alignement en ligne */
+    width: 100%; /* Prendre toute la largeur */
+}
+
+/* Colonne logo */
+.logo-footer {
+    max-width: 160px; /* Limite de largeur du logo */
+}
+
+/* Texte du footer */
+.footer-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+
+.footer-subtext {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 230px;
+}
+
+/* Colonne contact */
+.contact-info {
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+/* Alignement des icônes sociales et du bouton contact */
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: 130px; /* Espacement entre les icônes */
+    margin-top: 10px;
+}
+
+    .social-links img {
+        width: 20px; /* Ajuste la taille des icônes */
+        height: 20px; /* Ajuste la taille des icônes */
+        margin-right: 30px; /* Espacement entre les icônes */
+    }
+
+.contact-button {
+    margin-left: 120px; /* Espacement entre le bouton contact et les icônes sociales */
+    margin-top: 10px;
+}
+
+/* Bouton contact */
+.btn-contact {
+    display: inline-block;
+    background-color: #f8d210;
+    color: #212529;
+    padding: 5px 10px; /* Ajustement du padding */
+    border-radius: 5px; /* Ajustement du radius */
+    text-decoration: none;
+}
+
+/* Option : Fixer le footer si on veut qu'il soit toujours visible */
+.footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 99.9%;
+}
