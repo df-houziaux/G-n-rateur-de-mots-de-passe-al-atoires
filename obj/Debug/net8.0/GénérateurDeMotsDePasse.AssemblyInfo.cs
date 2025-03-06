@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GénérateurDeMotsDePasse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2d9cf689ca5626eef867d2f56fe8c4feccf8020")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94ece9ec687084e0e0656462ae5d1b3369bf2a3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("GénérateurDeMotsDePasse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GénérateurDeMotsDePasse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
